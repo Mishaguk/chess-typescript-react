@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cell img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+.black {
+  background-color: deepskyblue;
+}
+
+.white {
+  background-color: rgb(244, 216, 165);
+}
+
+.selected {
+  background-color: rgb(84, 62, 62);
+}
+
+.avaliable {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: rgb(160, 244, 34);
+}
+
+.lost {
+  height: 35vh;
+  width: 80px;
+  padding: 30px;
+  margin-left: 50px;
+  background-color: rgba(211, 211, 211, 0.422);
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 30px;
+}
+
+.restart-button {
+  padding: 5px;
+  background-color: skyblue;
+  border-radius: 10%;
+  border: black 1px solid;
+}
+
+.col-index {
+  display: grid;
+  grid-template-columns: repeat(8, 64px);
+  text-align: center;
+}
+.row-index {
+  display: grid;
+  grid-template-rows: repeat(8, 64px);
+  align-items: center;
+}
+
+.attacked {
+  background-color: red;
+}
+
+.modal-container {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.493);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 200px;
+  border-radius: 10%;
+}
+.modal-text {
+  color: white;
+  text-align: center;
+}
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-close-button {
+  background-color: rgb(0, 187, 255);
+  width: 100px;
+  height: 50px;
+  border-radius: 10%;
+  border: none;
+  box-shadow: 0px 0px 3px 1px rgb(255, 255, 255);
+  cursor: pointer;
+}
